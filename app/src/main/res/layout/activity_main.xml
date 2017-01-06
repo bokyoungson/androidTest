@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.sbk.newtextmessage.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E0E0E0">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/backButton"
+            android:src="@drawable/backbtn"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="#E0E0E0"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="새 메시지"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:hint="받는 사람을 입력하세요"
+            android:background="#FFFFFF"
+            android:id="@+id/receiver"
+            android:layout_weight="0.55" />
+        <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/numberButton"
+        android:src="@drawable/numberbtn"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="#FFFF"
+        />
+    </LinearLayout>
+<!--
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="430dp">
+
+   </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="1">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/clipButton"
+            android:src="@drawable/clipbtn"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="#FFFF" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:hint="메시지를 입력하세요"
+            android:background="#FFFFFF"
+            android:id="@+id/content"
+            android:layout_weight="0.55" />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imoticonButton"
+            android:src="@drawable/imoticonbtn"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="#FFFF" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/sendButton"
+            android:text="보내기"
+            android:textSize="15dp"
+            android:background="#ED9A25"
+            android:textColor="#FFFF"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
